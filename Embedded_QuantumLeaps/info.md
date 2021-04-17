@@ -1,0 +1,1 @@
+pliki w tym folderze zostały stworzone na podstawie materiałów z https://www.state-machine.com/video-course/ - darmowych lekcji na Youtube z programowania embedded

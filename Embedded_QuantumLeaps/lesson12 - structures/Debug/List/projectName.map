@@ -1,0 +1,175 @@
+###############################################################################
+#
+# IAR ELF Linker V8.50.6.265/W32 for ARM                  30/Jan/2021  23:01:31
+# Copyright 2007-2020 IAR Systems AB.
+#
+#    Output file  =
+#        C:\EmbeddedProgramming\takeTwo\lesson12 -
+#        structures\Debug\Exe\projectName.out
+#    Map file     =
+#        C:\EmbeddedProgramming\takeTwo\lesson12 -
+#        structures\Debug\List\projectName.map
+#    Command line =
+#        -f C:\Users\RANDOM~1\AppData\Local\Temp\EWEC9C.tmp
+#        ("C:\EmbeddedProgramming\takeTwo\lesson12 -
+#        structures\Debug\Obj\delay.o" "C:\EmbeddedProgramming\takeTwo\lesson12
+#        - structures\Debug\Obj\main.o" --no_out_extension -o
+#        "C:\EmbeddedProgramming\takeTwo\lesson12 -
+#        structures\Debug\Exe\projectName.out" --redirect
+#        _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map
+#        "C:\EmbeddedProgramming\takeTwo\lesson12 -
+#        structures\Debug\List\projectName.map" --config
+#        "C:\EmbeddedProgramming\takeTwo\lesson12 - structures\projectName.icf"
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x3'ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 0, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'7fff] {
+          rw, block CSTACK, block HEAP };
+
+No sections matched the following patterns:
+
+  rw  in "P2"
+
+
+  Section   Kind         Address   Size  Object
+  -------   ----         -------   ----  ------
+"A0":                              0x40
+  .intvec   ro code          0x0   0x40  vector_table_M.o [4]
+                          - 0x40   0x40
+
+"P1":                             0x104
+  .text     ro code         0x40   0x78  main.o [1]
+  .text     ro code         0xb8   0x14  delay.o [1]
+  .text     ro code         0xcc   0x22  fpinit_M.o [3]
+  .text     ro code         0xee    0x2  vector_table_M.o [4]
+  .text     ro code         0xf0   0x1e  cmain.o [4]
+  .text     ro code        0x10e    0x4  low_level_init.o [2]
+  .text     ro code        0x112    0x4  exit.o [2]
+  .text     ro code        0x118    0xa  cexit.o [4]
+  .text     ro code        0x124   0x14  exit.o [5]
+  .text     ro code        0x138    0xc  cstartup_M.o [4]
+                         - 0x144  0x104
+
+"P2":                             0x400
+  CSTACK             0x2000'0000  0x400  <Block>
+    CSTACK  uninit   0x2000'0000  0x400  <Block tail>
+                   - 0x2000'0400  0x400
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+        0x144     0x3'ffff  0x3'febc
+  0x2000'0400  0x2000'7fff    0x7c00
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  rw data
+    ------            -------  -------
+command line/config:
+    ----------------------------------
+    Total:
+
+C:\EmbeddedProgramming\takeTwo\lesson12 - structures\Debug\Obj: [1]
+    delay.o                20
+    main.o                120
+    ----------------------------------
+    Total:                140
+
+dl7M_tln.a: [2]
+    exit.o                  4
+    low_level_init.o        4
+    ----------------------------------
+    Total:                  8
+
+m7M_tls.a: [3]
+    fpinit_M.o             34
+    ----------------------------------
+    Total:                 34
+
+rt7M_tl.a: [4]
+    cexit.o                10
+    cmain.o                30
+    cstartup_M.o           12
+    vector_table_M.o       66
+    ----------------------------------
+    Total:                118
+
+shb_l.a: [5]
+    exit.o                 20
+    ----------------------------------
+    Total:                 20
+
+    Gaps                    4
+    Linker created               1'024
+--------------------------------------
+    Grand Total:          324    1'024
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                     Address  Size  Type      Object
+-----                     -------  ----  ----      ------
+?main                        0xf1        Code  Gb  cmain.o [4]
+CSTACK$$Base          0x2000'0000         --   Gb  - Linker created -
+CSTACK$$Limit         0x2000'0400         --   Gb  - Linker created -
+Region$$Table$$Base           0x0         --   Gb  - Linker created -
+Region$$Table$$Limit          0x0         --   Gb  - Linker created -
+__cmain                      0xf1        Code  Gb  cmain.o [4]
+__exit                      0x125  0x14  Code  Gb  exit.o [5]
+__iar_init_vfp               0xcd        Code  Gb  fpinit_M.o [3]
+__iar_program_start         0x139        Code  Gb  cstartup_M.o [4]
+__low_level_init            0x10f   0x4  Code  Gb  low_level_init.o [2]
+__vector_table                0x0        Data  Gb  vector_table_M.o [4]
+_call_main                   0xfd        Code  Gb  cmain.o [4]
+_exit                       0x119        Code  Gb  cexit.o [4]
+_main                       0x10b        Code  Gb  cmain.o [4]
+delay                        0xb9  0x14  Code  Gb  delay.o [1]
+exit                        0x113   0x4  Code  Gb  exit.o [2]
+main                         0x41  0x78  Code  Gb  main.o [1]
+
+
+[1] = C:\EmbeddedProgramming\takeTwo\lesson12 - structures\Debug\Obj
+[2] = dl7M_tln.a
+[3] = m7M_tls.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+    324 bytes of readonly  code memory
+  1'024 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

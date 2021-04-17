@@ -1,0 +1,15 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\bin\armlmiftdi.dll" 
+
+"C:\ti\TivaWare_C_Series-2.2.0.295\examples\boards\ek-tm4c123gxl\forbot\lesson4\Debug\Exe\lesson4.out" 
+
+--plugin="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\bin\armbat.dll" 
+
+--device_macro="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\debugger\TexasInstruments\LM4F.dmac" 
+
+--flash_loader="C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\config\flashloader\TexasInstruments\FlashLM4FxxxHxx.board" 
+
+
+
+
