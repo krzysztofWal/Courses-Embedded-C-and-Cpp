@@ -7,7 +7,6 @@
 #endif
 
 #include "inc/hw_types.h"
-//#include "inc/hw_memmap.h"
 #include <stdint.h>
 #include <stdbool.h>
 
@@ -19,8 +18,6 @@
 #include "inc/hw_timer.h"
 #include "tm4c_cmsis.h"
 #include "driverlib/rom_map.h"
-
-//#define GPIO_PF1_T0CCP1		0x00050407
 
 int main()
 {
@@ -44,10 +41,6 @@ int main()
 	TIMER0->TBMATCHR = 980;
 	//enable timer
 	TIMER0->CTL |= (1u << 8);
-	
-	//TimerLoadSet(TIMER0_BASE, TIMER_B, ul_period - 1);
-	//TimerMatchSet(TIMER0_BASE, TIMER_B, duty_cycle);
-	//TimerEnable(TIMER0_BASE, TIMER_B);
  	
 	//enabling port F
 	SYSCTL->RCGC2 |= (1u << 5);
@@ -57,9 +50,6 @@ int main()
 	GPIOF->PCTL = 0x00007770u;
 	//enabling digital output at port 1
 	GPIOF->DEN  |= (1u << 1);
-//	SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF);
-//	GPIOPinConfigure(GPIO_PF1_T0CCP1);
-//	GPIOPinTypeTimer(GPIO_PORTF_BASE, 2u);
 	
 	while(1) { // The following code varies the duty cycle over time
     	//TimerMatchSet(TIMER0_BASE, TIMER_B, duty_cycle++);
@@ -71,74 +61,6 @@ int main()
 
         SysCtlDelay(50000);
     }
-	
-	/*
-	//
-    // Enable the GPIO Port and Timer for each LED
-    //
-    MAP_SysCtlPeripheralEnable(RED_GPIO_PERIPH);
-    MAP_SysCtlPeripheralEnable(RED_TIMER_PERIPH);
 
-    MAP_SysCtlPeripheralEnable(GREEN_GPIO_PERIPH);
-    MAP_SysCtlPeripheralEnable(GREEN_TIMER_PERIPH);
-
-    MAP_SysCtlPeripheralEnable(BLUE_GPIO_PERIPH);
-    MAP_SysCtlPeripheralEnable(BLUE_TIMER_PERIPH);
-
-    //
-    // Configure each timer for output mode
-    //
-    HWREG(GREEN_TIMER_BASE + TIMER_O_CFG)   = 0x04;
-    HWREG(GREEN_TIMER_BASE + TIMER_O_TAMR)  = 0x0A;
-    HWREG(GREEN_TIMER_BASE + TIMER_O_TAILR) = 0xFFFF;
-
-    HWREG(BLUE_TIMER_BASE + TIMER_O_CFG)   = 0x04;
-    HWREG(BLUE_TIMER_BASE + TIMER_O_TBMR)  = 0x0A;
-    HWREG(BLUE_TIMER_BASE + TIMER_O_TBILR) = 0xFFFF;
-
-    HWREG(RED_TIMER_BASE + TIMER_O_CFG)   = 0x04;
-    HWREG(RED_TIMER_BASE + TIMER_O_TBMR)  = 0x0A;
-    HWREG(RED_TIMER_BASE + TIMER_O_TBILR) = 0xFFFF;
-
-    //
-    // Invert the output signals.
-    //
-    HWREG(RED_TIMER_BASE + TIMER_O_CTL)   |= 0x4000;
-    HWREG(GREEN_TIMER_BASE + TIMER_O_CTL)   |= 0x40;
-    HWREG(BLUE_TIMER_BASE + TIMER_O_CTL)   |= 0x4000;
-	
-	MAP_TimerMatchSet(RED_TIMER_BASE, RED_TIMER, 0);
-	MAP_TimerMatchSet(GREEN_TIMER_BASE, GREEN_TIMER, 0);
-	MAP_TimerMatchSet(BLUE_TIMER_BASE, BLUE_TIMER, 240);
-	
-	//
-    // Enable timers to begin counting
-    //
-    MAP_TimerEnable(RED_TIMER_BASE, TIMER_BOTH);
-    MAP_TimerEnable(GREEN_TIMER_BASE, TIMER_BOTH);
-    MAP_TimerEnable(BLUE_TIMER_BASE, TIMER_BOTH);
-	
-    //
-    // Reconfigure each LED's GPIO pad for timer control
-    //
-    MAP_GPIOPinConfigure(GREEN_GPIO_PIN_CFG);
-    MAP_GPIOPinTypeTimer(GREEN_GPIO_BASE, GREEN_GPIO_PIN);
-    MAP_GPIOPadConfigSet(GREEN_GPIO_BASE, GREEN_GPIO_PIN, GPIO_STRENGTH_8MA_SC,
-                     GPIO_PIN_TYPE_STD);
-
-    MAP_GPIOPinConfigure(BLUE_GPIO_PIN_CFG);
-    MAP_GPIOPinTypeTimer(BLUE_GPIO_BASE, BLUE_GPIO_PIN);
-    MAP_GPIOPadConfigSet(BLUE_GPIO_BASE, BLUE_GPIO_PIN, GPIO_STRENGTH_8MA_SC,
-                     GPIO_PIN_TYPE_STD);
-
-    MAP_GPIOPinConfigure(RED_GPIO_PIN_CFG);
-    MAP_GPIOPinTypeTimer(RED_GPIO_BASE, RED_GPIO_PIN);
-    MAP_GPIOPadConfigSet(RED_GPIO_BASE, RED_GPIO_PIN, GPIO_STRENGTH_8MA_SC,
-                     GPIO_PIN_TYPE_STD);
-	
-	while(1) {
-		
-	}
-	*/
 	return 0;
 }
