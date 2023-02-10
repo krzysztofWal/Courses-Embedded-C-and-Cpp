@@ -1,1 +1,3 @@
-pliki w tym folderze zostały stworzone na podstawie materiałów z https://www.state-machine.com/video-course/ - darmowych lekcji na Youtube z programowania embedded
+#####Contents
+Files in this folder were created based on materials from great online free course on
+https://www.state-machine.com/video-course/ 

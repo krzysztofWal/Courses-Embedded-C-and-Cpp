@@ -1,0 +1,10 @@
+-Ic:\Tools\compilingkingdom\mingw64\include\c++\12.2.0
+-Ic:\Tools\compilingkingdom\mingw64\include\c++\12.2.0\x86_64-w64-mingw32
+-Ic:\Tools\compilingkingdom\mingw64\include\c++\12.2.0\backward
+-Ic:\Tools\compilingkingdom\mingw64\lib\gcc\x86_64-w64-mingw32\12.2.0\include
+-Ic:\Tools\compilingkingdom\mingw64\include
+-Ic:\Tools\compilingkingdom\mingw64\lib\gcc\x86_64-w64-mingw32\12.2.0\include-fixed
+-Ic:\Tools\compilingkingdom\mingw64\x86_64-w64-mingw32\include
+-IC:\kursy\udemy_cpp\16_Polymorphism\Challenge
+-target
+x86_64-pc-windows-gnu
