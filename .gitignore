@@ -1,0 +1,17 @@
+
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+#
+notes.txt
+/PWM_registers
+/Forbot_TivaC/ad5DynamicMemoryAllocation
+Embedded_QuantumLeaps_take2/
+**/Debug/
+/Cpp_Course/
+C#_Playground
+# if Cplayground is commented uncomment those below:
+#**/bin/
+#**/obj/
+#**/.vs/
