@@ -5,71 +5,71 @@
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\Debug\List\projectName.map</file>
-            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$PROJ_DIR$\main.c</file>
-            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
             <file>$PROJ_DIR$\delay.h</file>
+            <file>$PROJ_DIR$\Debug\List\projectName.map</file>
             <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
             <file>$PROJ_DIR$\delay.c</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\projectName.icf</file>
             <file>$PROJ_DIR$\Debug\Exe\projectName.out</file>
             <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$PROJ_DIR$\projectName.icf</file>
             <file>$PROJ_DIR$\lm4f120h5qr.h</file>
+            <file>$PROJ_DIR$\main.c</file>
             <file>$PROJ_DIR$\Debug\Obj\delay.o</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
         </outputs>
-        <file>
-            <name>[ROOT_NODE]</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 8 0</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\main.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 5</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 11</file>
-                </tool>
-            </inputs>
-        </file>
         <file>
             <name>$PROJ_DIR$\delay.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 12</file>
+                    <file> 11</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 4</file>
+                    <file> 0</file>
                 </tool>
             </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 1 7</file>
+                </tool>
+            </outputs>
         </file>
         <file>
             <name>$PROJ_DIR$\Debug\Exe\projectName.out</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 0</file>
+                    <file> 1</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 10 5 1 9 6 3</file>
+                    <file> 6 2 4 8 12 5</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 9</file>
                 </tool>
             </inputs>
         </file>

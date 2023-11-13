@@ -5,15 +5,20 @@
 #define LED_GREEN	(1u << 3)
 
 #define INTERVAL 1250000
+//int INTERVAL = 1250000;
+//int VARIABLE2 = 13400;
 
 void delay(int iter);
 
 void delay(int iter)
+//void delay(void);
+//void delay(void)
 {
   int volatile counter = 0;
-  while (counter < iter)
+  while (counter < INTERVAL)
   {
           ++counter;
+//          VARIABLE2++;
 }
 
 }
@@ -31,7 +36,9 @@ int main()
     
     while(1) {
         delay(INTERVAL);
+//        delay();
         GPIO_PORTF_AHB_DATA_BITS_R[LED_BLUE] = LED_BLUE;
+//        delay();
         delay(INTERVAL);
         GPIO_PORTF_AHB_DATA_BITS_R[LED_BLUE] = 0;
     }

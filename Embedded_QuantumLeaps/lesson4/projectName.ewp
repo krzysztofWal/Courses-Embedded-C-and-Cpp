@@ -74,7 +74,7 @@
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
-                    <state>LM4F120H5QR	TexasInstruments LM4F120H5QR</state>
+                    <state>TM4C123GH6PM	TexasInstruments TM4C123GH6PM</state>
                 </option>
                 <option>
                     <name>GenLowLevelInterface</name>
@@ -120,17 +120,17 @@
                 </option>
                 <option>
                     <name>GFPUDeviceSlave</name>
-                    <state>LM4F120H5QR	TexasInstruments LM4F120H5QR</state>
+                    <state>TM4C123GH6PM	TexasInstruments TM4C123GH6PM</state>
                 </option>
                 <option>
                     <name>FPU2</name>
                     <version>0</version>
-                    <state>0</state>
+                    <state>4</state>
                 </option>
                 <option>
                     <name>NrRegs</name>
                     <version>0</version>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>NEON</name>
@@ -663,7 +663,7 @@
             <data>
                 <extensions></extensions>
                 <cmdline></cmdline>
-                <hasPrio>176</hasPrio>
+                <hasPrio>1</hasPrio>
                 <buildSequence>inputOutputBased</buildSequence>
             </data>
         </settings>
@@ -752,11 +752,11 @@
                 </option>
                 <option>
                     <name>IlinkIcfOverride</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$TOOLKIT_DIR$/config/linker/TexasInstruments/LM4F120H5QR.icf</state>
+                    <state>C:\Users\Krzysztof\git\Courses - Embedded C and Cpp\Embedded_QuantumLeaps\lesson4\projectName.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -1069,6 +1069,11 @@
                     <state>###Unitialized###</state>
                 </option>
             </data>
+        </settings>
+        <settings>
+            <name>Coder</name>
+            <archiveVersion>0</archiveVersion>
+            <data />
         </settings>
     </configuration>
     <configuration>
@@ -2139,6 +2144,11 @@
                     <state>###Unitialized###</state>
                 </option>
             </data>
+        </settings>
+        <settings>
+            <name>Coder</name>
+            <archiveVersion>0</archiveVersion>
+            <data />
         </settings>
     </configuration>
     <file>

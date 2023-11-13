@@ -40,27 +40,44 @@ int main()
 #include "lm4f120h5qr.h"
 #define INTERVAL 1250000
 
+
+#define LED_RED		(1u << 1)
+#define LED_BLUE	(1u << 2)
+#define LED_GREEN	(1u << 3)
+
+
+ volatile  unsigned int counter = 0; 
 int main()
 {
   
-    SYSCTL_RCGCGPIO_R = 0x20u; //clock gating
-    GPIO_PORTF_DIR_R = 0x0eu; // set as outputs (pins 1,2,3)
-    GPIO_PORTF_DEN_R = 0x0eu; // digital outputs
+//    SYSCTL_RCGCGPIO_R = 0x20u; //clock gating
+//    GPIO_PORTF_DIR_R = 0x0eu; // set as outputs (pins 1,2,3)
+//    GPIO_PORTF_DEN_R = 0x0eu; // digital outputs
+    SYSCTL_RCGCGPIO_R |= (1U << 5); // clock gating for gpio port f
+  
+    SYSCTL_GPIOHBCTL_R |= (1u << 5); // enable the AHB for gpio port f
+    
+    GPIO_PORTF_AHB_DIR_R |= (LED_RED | LED_BLUE | LED_GREEN);
+    GPIO_PORTF_AHB_DEN_R  |= (LED_RED | LED_BLUE | LED_GREEN);
 
     
     while(1) {
-        GPIO_PORTF_DATA_R = 0x02u;
-        volatile unsigned int counter = 0;
+      
+    
+//      GPIO_PORTF_DATA_R = 0x02u;
+      GPIO_PORTF_AHB_DATA_BITS_R[LED_BLUE] = LED_BLUE;  
         while (counter < INTERVAL) 
         {
                 ++counter;
         }
-        GPIO_PORTF_DATA_R = 0x00u;
+//        GPIO_PORTF_DATA_R = 0x00u;
+        GPIO_PORTF_AHB_DATA_BITS_R[LED_BLUE] = 0;
         counter = 0;
         while (counter < INTERVAL) 
         {
                 ++counter;
         }
+         counter = 0;
     }
  
     return 0;

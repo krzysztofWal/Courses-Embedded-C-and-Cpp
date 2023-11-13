@@ -1,0 +1,27 @@
+Dependencies for Project 'lesson', Target 'dbg': (DO NOT MODIFY !)
+CompilerVersion: 6190000::V6.19::ARMCLANG
+F (.\bsp.c)(0x64D20FAE)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-D__EVAL -gdwarf-4 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I . -I ../qpc/3rd_party/CMSIS/Include -I ../qpc/3rd_party/ek-tm4c123gxl -D__UVISION_VERSION="538" -DTM4C123GH6PM -D__FPU_PRESENT-o ./dbg/bsp.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63889D68)
+I (bsp.h)(0x64D20FAE)
+I (..\qpc\3rd_party\ek-tm4c123gxl\TM4C123GH6PM.h)(0x64D20E37)
+I (..\qpc\3rd_party\CMSIS\Include\core_cm4.h)(0x64D20E32)
+I (..\qpc\3rd_party\CMSIS\Include\cmsis_version.h)(0x64D20E31)
+I (..\qpc\3rd_party\CMSIS\Include\cmsis_compiler.h)(0x64D20E31)
+I (..\qpc\3rd_party\CMSIS\Include\cmsis_armclang.h)(0x64D20E31)
+I (..\qpc\3rd_party\CMSIS\Include\mpu_armv7.h)(0x64D20E32)
+I (..\qpc\3rd_party\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x64D20E37)
+F (.\main.c)(0x64D3A522)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-D__EVAL -gdwarf-4 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I . -I ../qpc/3rd_party/CMSIS/Include -I ../qpc/3rd_party/ek-tm4c123gxl -D__UVISION_VERSION="538" -DTM4C123GH6PM -D__FPU_PRESENT-o ./dbg/main.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63889D68)
+I (bsp.h)(0x64D20FAE)
+F (.\bsp.h)(0x64D20FAE)()
+F (..\qpc\3rd_party\ek-tm4c123gxl\system_TM4C123GH6PM.c)(0x64D20E37)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char-D__EVAL -gdwarf-4 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I . -I ../qpc/3rd_party/CMSIS/Include -I ../qpc/3rd_party/ek-tm4c123gxl -D__UVISION_VERSION="538" -DTM4C123GH6PM -D__FPU_PRESENT-o ./dbg/system_tm4c123gh6pm.o -MD)
+I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x63889D68)
+I (..\qpc\3rd_party\ek-tm4c123gxl\TM4C123GH6PM.h)(0x64D20E37)
+I (..\qpc\3rd_party\CMSIS\Include\core_cm4.h)(0x64D20E32)
+I (..\qpc\3rd_party\CMSIS\Include\cmsis_version.h)(0x64D20E31)
+I (..\qpc\3rd_party\CMSIS\Include\cmsis_compiler.h)(0x64D20E31)
+I (..\qpc\3rd_party\CMSIS\Include\cmsis_armclang.h)(0x64D20E31)
+I (..\qpc\3rd_party\CMSIS\Include\mpu_armv7.h)(0x64D20E32)
+I (..\qpc\3rd_party\ek-tm4c123gxl\system_TM4C123GH6PM.h)(0x64D20E37)
+F (..\qpc\3rd_party\ek-tm4c123gxl\arm\startup_TM4C123GH6PM.s)(0x64D20E37)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --diag_suppress=A1950W --pd "__UVISION_VERSION SETA 538"--pd "TM4C123GH6PM SETA 1"--pd "Stack_Size SETA 1024"--pd "Heap_Size SETA 0"-o .\dbg\startup_tm4c123gh6pm.o--depend .\dbg\startup_tm4c123gh6pm.d)
+F (..\qpc\3rd_party\ek-tm4c123gxl\TM4C123GH6PM.h)(0x64D20E37)()

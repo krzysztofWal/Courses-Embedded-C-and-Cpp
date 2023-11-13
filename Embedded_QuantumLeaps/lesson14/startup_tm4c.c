@@ -13,12 +13,14 @@ void Unused_Handler(void);
 const int __vector_table[] @ ".intvec" = {
 	(int)&CSTACK$$Limit,
 	(int)&__iar_program_start, // reset - pc adress after a reset
+        // these are common for all ARM COrtex-M
+        // and are for handling standard  exceptions:
 	(int)&NMI_Handler,
 	(int)&HardFault_Handler,
 	(int)&MemManage_Handler,
 	(int)&BusFault_Handler,
 	(int)&UsageFault_Handler,
-	0, //reserved
+	0, //reserved slots - usually 
 	0,
 	0,
 	0,

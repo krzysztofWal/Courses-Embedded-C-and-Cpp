@@ -16,7 +16,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>2356389846</Checksum>
+        <Checksum>3051517852</Checksum>
     </DebugChecksum>
     <Disassembly>
         <InstrCount>0</InstrCount>
@@ -62,11 +62,6 @@
         <SumEnabled>0</SumEnabled>
         <ShowTimeSum>1</ShowTimeSum>
     </DataLog>
-    <Breakpoints2>
-        <Bp0>_ 0 "STD_CODE2" "{$PROJ_DIR$\main.c}.0.1" 0 0 1 "" 0 ""</Bp0>
-        <Bp1>_ 1 "STD_CODE2" "0x00000056" 0 0 1 "" 0 ""</Bp1>
-        <Count>2</Count>
-    </Breakpoints2>
     <Interrupts>
         <Enabled>1</Enabled>
     </Interrupts>
@@ -82,24 +77,12 @@
         <FreqHi>0</FreqHi>
         <MultiCoreRunAll>1</MultiCoreRunAll>
     </Simulator>
-    <TermIOLog>
-        <LoggingEnabled>_ 0</LoggingEnabled>
-        <LogFile>_ ""</LogFile>
-    </TermIOLog>
-    <LogFile>
-        <LoggingEnabled>_ 0</LoggingEnabled>
-        <LogFile>_ ""</LogFile>
-        <Category>_ 0</Category>
-    </LogFile>
     <CallStackLog>
         <Enabled>0</Enabled>
     </CallStackLog>
     <CallStackStripe>
         <ShowTiming>1</ShowTiming>
     </CallStackStripe>
-    <DisassembleMode>
-        <mode>0</mode>
-    </DisassembleMode>
     <Breakpoints>
         <Bp0>_ "STD_CODE" "0x00000046" 0 0 0 0 "" 0 ""</Bp0>
         <Bp1>_ "STD_CODE" "{$PROJ_DIR$\main.c}.13.1" 0 0 0 0 "" 0 ""</Bp1>
@@ -108,8 +91,45 @@
         <Bp4>_ "STD_CODE" "{$PROJ_DIR$\bsp.c}.11.1" 1 0 0 0 "" 0 ""</Bp4>
         <Count>5</Count>
     </Breakpoints>
+    <PlDriver>
+        <MemConfigValue>C:\Program Files\IAR Systems\Embedded Workbench 9.1\arm\CONFIG\debugger\TexasInstruments\LM4F120H5QR.ddf</MemConfigValue>
+        <FirstRun>0</FirstRun>
+    </PlDriver>
+    <ArmDriver>
+        <EnableCache>0</EnableCache>
+        <EnforceMemoryConfiguration>1</EnforceMemoryConfiguration>
+    </ArmDriver>
+    <LmiFtdiDriver>
+        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
+        <CStepIntDis>_ 0</CStepIntDis>
+        <LmiFtdiResetStyle>0</LmiFtdiResetStyle>
+        <LmiFtdiResetStrategy>0</LmiFtdiResetStrategy>
+        <LMIFTDIserialNo>0E22CAD9</LMIFTDIserialNo>
+        <LMIFTDIfoundProbes />
+    </LmiFtdiDriver>
+    <Trace2>
+        <Enabled>0</Enabled>
+        <ShowSource>0</ShowSource>
+    </Trace2>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints2>
+        <Bp0>_ 0 "EMUL_CODE" "0x00000056" 0 0 1 "" 0 "" 0</Bp0>
+        <Bp1>_ 1 "EMUL_CODE" "0x100" 0 0 1 "" 0 "" 0</Bp1>
+        <Count>2</Count>
+    </Breakpoints2>
     <Aliases>
         <Count>0</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
+    <TermIOLog>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+    </TermIOLog>
+    <LogFile>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+        <Category2>_ 0</Category2>
+    </LogFile>
 </settings>

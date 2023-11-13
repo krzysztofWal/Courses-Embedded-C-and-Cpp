@@ -89,16 +89,16 @@
         <Count>2</Count>
     </Breakpoints>
     <PlDriver>
-        <MemConfigValue>C:\Program Files\IAR Systems\Embedded Workbench 9.1\arm\CONFIG\debugger\TexasInstruments\TM4C123FH6PM.ddf</MemConfigValue>
         <FirstRun>0</FirstRun>
+        <MemConfigValue>C:\Program Files\IAR Systems\Embedded Workbench 9.1\arm\CONFIG\debugger\TexasInstruments\TM4C123FH6PM.ddf</MemConfigValue>
     </PlDriver>
     <LmiFtdiDriver>
-        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
-        <CStepIntDis>_ 0</CStepIntDis>
-        <LmiFtdiResetStyle>0</LmiFtdiResetStyle>
-        <LmiFtdiResetStrategy>1</LmiFtdiResetStrategy>
         <LMIFTDIserialNo>0E22CAD9</LMIFTDIserialNo>
         <LMIFTDIfoundProbes />
+        <LmiFtdiResetStyle>0</LmiFtdiResetStyle>
+        <LmiFtdiResetStrategy>1</LmiFtdiResetStrategy>
+        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
+        <CStepIntDis>_ 0</CStepIntDis>
     </LmiFtdiDriver>
     <ArmDriver>
         <EnableCache>0</EnableCache>
@@ -108,18 +108,6 @@
         <Enabled>0</Enabled>
         <ShowSource>0</ShowSource>
     </Trace2>
-    <DisassembleMode>
-        <mode>0</mode>
-    </DisassembleMode>
-    <Breakpoints2>
-        <Bp0>_ 0 "EMUL_CODE" "0x00000056" 0 0 1 "" 0 "" 0</Bp0>
-        <Bp1>_ 0 "EMUL_CODE" "0x1b4" 0 0 1 "" 0 "" 0</Bp1>
-        <Count>2</Count>
-    </Breakpoints2>
-    <Aliases>
-        <Count>0</Count>
-        <SuppressDialog>0</SuppressDialog>
-    </Aliases>
     <TermIOLog>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
@@ -129,4 +117,16 @@
         <LogFile>_ ""</LogFile>
         <Category2>_ 0</Category2>
     </LogFile>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints2>
+        <Bp0>_ 0 "EMUL_CODE" "0x138" 0 0 1 "" 0 "" 0</Bp0>
+        <Bp1>_ 1 "EMUL_CODE" "0x1a8" 0 0 1 "" 0 "" 0</Bp1>
+        <Count>2</Count>
+    </Breakpoints2>
+    <Aliases>
+        <Count>0</Count>
+        <SuppressDialog>0</SuppressDialog>
+    </Aliases>
 </settings>
